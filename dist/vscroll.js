@@ -3,7 +3,7 @@ import VirtualScroll from 'virtual-scroll';
 import raf from 'raf';
 import transform from 'prefix';
 
-export default class VerticalScroll extends EventEmitter {
+export default class HorizontalScroll extends EventEmitter {
 
 	constructor(opts) {
 		super();
@@ -33,7 +33,7 @@ export default class VerticalScroll extends EventEmitter {
 		};
 
 		this.wrapper = document.createElement('div');
-		this.wrapper.setAttribute('class', 'vertical-scroll');
+		this.wrapper.setAttribute('class', 'horizontal-scroll');
 
 		this.vs = new VirtualScroll();
 		this.transform = transform('transform');
